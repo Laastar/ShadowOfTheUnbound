@@ -1,0 +1,122 @@
+{% extends 'cuerpo/base.html' %}
+
+{% block content %}
+
+    {% load staticfiles %}
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col m12">
+                    <center><h2 class="tipro">Extensiones</h2>
+                        <p class="tipro2">Extensiones Individuales de cabello colocadas una a una que son casi
+                            imperceptibles</p>
+                    </center>
+
+                </div>
+            </div>
+            <h5>
+                <p>No dañan el cabello, son difíciles de detectar, densidad de cabello bien distribuida y pueden
+                    mezclarse colores para darte toques de luminosidad, degradados o mechados.</p><br>
+            </h5>
+            <p class="tipro2">Cabello nuevo con...</p>
+            <div class="row">
+                <div class="col m6">
+                    <br>
+                    <center><h1 class="colorcito">Extensiones con keratina</h1>
+                        <p class="colorcito2">La colocación de extensiones de cabello con keratina es una de las
+                            técnicas preferidas por las mujeres, pues además de lograr el largo y volumen que tú
+                            prefieras, se utilizan pequeñas piezas de keratina para fijar las extensiones de manera
+                            individual en pequeños mechones y darle mucha flexibilidad a tus extensiones.</p></center>
+                </div>
+                <div class="col m6">
+                    <div class="row">
+                        <div class="col m12">
+                                <img class='imgRedonda' src="{% static 'cuerpo/img/ant.jpg' %}">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col m6">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col m6">
+                    <div class="row">
+                        <div class="col m12">
+                                <img class='imgRedonda' src="{% static 'cuerpo/img/ant2.jpg' %}">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col m6">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col m6">
+                    <br>
+                    <center><h1 class="colorcito">Extensiones de cortina fija con grapa</h1>
+                        <p class="colorcito2">Las extensiones de cabello en cortina fija con grapa son una manera
+                            sencilla y sorprendente de lucir un cabello largo y abundante por períodos largos. Se coloca
+                            una cortina de hermoso cabello y se van sacando mechas del propio cabello y de la cortina
+                            para ir uniéndolos de manera seccionada con una especie de grapas pequeñitas. Una vez que
+                            están juntas las mechas del cabello propio y la extensión, se fijan y listo.
+                        </p></center>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col m6">
+                    <br>
+                    <center><h1 class="colorcito">Extensiones de cortina removible</h1>
+                        <p class="colorcito2">Las extensiones de cabello en cortina removible son una excelente opción
+                            por si te gusta alternar de look entre largo y corto o diferentes estilos de manera
+                            sencilla. Se colocan cortinas de cabello sujetadas con clips sobre tu propio cabello y estas
+                            pueden ponerse o quitarse más fácilmente.</p></center>
+                </div>
+                <div class="col m6">
+                    <div class="row">
+                        <div class="col m12">
+                                <img class='imgRedonda' src="{% static 'cuerpo/img/ant3.jpg' %}">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col m6">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col m6">
+                    <div class="row">
+                        <div class="col m12">
+                                <img class='imgRedonda' src="{% static 'cuerpo/img/ant4.jpg' %}">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col m6">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col m6">
+                    <br>
+                    <center><h1 class="colorcito">Extensiones de grapa con queratina</h1>
+                        <p class="colorcito2">Otra alternativa de belleza y glamur son las extensiones de cabello
+                            colocadas con grapas con queratina. La extensión es unida al cabello por medio de una
+                            pequeña grapa que lleva una especie de cinturón con queratina en la parte que tiene contacto
+                            con el cabello, una vez unidos se aplica presión en la grapa para asegurar.
+                        </p></center>
+                </div>
+            </div>
+            <center><a class="waves-effect #e91e63 pink btn" href="{% url 'servicios' %}">Volver</a></center>
+            <br>
+            <br>
+            <br>
+        </div>
+    </main>
+
+{% endblock %}

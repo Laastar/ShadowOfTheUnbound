@@ -1,0 +1,27 @@
+{% extends 'cuerpo/base.html' %}
+
+{% block content %}
+
+    {% load staticfiles %}
+
+    <main>
+        <br><br>
+        <div class="container white">
+            {% for cita in citas %}
+                <div class="row">
+                <h4>
+                    {{ cita.dia }}
+                </h4>
+                <h6>
+                    {{ cita.hora }}
+                </h6>
+                <h9>
+                    {{ cita.servicio }}
+                </h9>
+                <p>------------------------------------------------------------------</p>
+            {% endfor %}
+            </div>
+        </div>
+    </main>
+
+{% endblock %}

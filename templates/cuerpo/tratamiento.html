@@ -1,0 +1,75 @@
+{% extends 'cuerpo/base.html' %}
+
+{% block content %}
+
+    {% load staticfiles %}
+
+    <main>
+        <div class="container">
+            <center><h2 class="tipro">Tratamiento Facial</h2>
+                <p class="tipro2">Cuida tu rostro este 2018</p>
+            </center>
+            <h5><p>En una ciudad tan estresante y contaminada como lo es la Ciudad de México, el cuidado de la piel
+                tiene que ser primordial, en es especial el rostro. Parte de ese proceso es visitar de vez en cuando a
+                los especialistas, para que se encarguen de hacer limpiezas e hidrataciones profundas, que nosotros
+                nunca lograríamos en nuestra casa.</p><br>
+            </h5>
+            <table>
+                <thead>
+                <tr>
+                    <th class="trabajo">Servicio</th>
+                    <th class="trabajo">Descripción</th>
+                    <th class="trabajo">Imagen</th>
+                </tr>
+                </thead>
+
+                <body>
+                <tr>
+                    <td class="trabajo">Eliminar Manchas</td>
+                    <td class="colorcito2">La eliminación de manchas es un tratamiento muy demandado para mejorar las
+                        pieles maduras. Son tratamientos sencillos y se pueden tratar con peelings, láser, luz pulsada,
+                        así como con terapias y cremas despigmentantes.
+                    </td>
+                    <td><img class="tabla" src="{% static 'cuerpo/img/h2.jpg' %}"></td>
+                </tr>
+                <tr>
+                    <td class="trabajo">Hidratación de piel</td>
+                    <td class="colorcito2">La hidratación de la piel es fundamental para mantener su elasticidad, la
+                        capa córnea es el estrato más superficial de la epidermis, se encarga de proteger a la piel de
+                        las agresiones externas y de la deshidratación.
+                    </td>
+                    <td><img class="tabla" src="{% static 'cuerpo/img/h1.jpg' %}"></td>
+                </tr>
+                <tr>
+                    <td class="trabajo">Limpieza profunda</td>
+                    <td class="colorcito2">Disfruta de una Limpieza Facial Profunda con especialistas que trasformarán
+                        tu piel.
+
+                        La piel del rostro está constantemente expuesta a la suciedad del medio ambiente, contaminantes
+                        y en el caso de las mujeres de restos de maquillaje, razón por la que suelen aparecer los
+                        antiestéticos puntos negros, espinillas, comedones y granos.
+                    </td>
+                    <td><img class="tabla" src="{% static 'cuerpo/img/h3.jpg' %}"></td>
+                </tr>
+                <tr>
+                    <td class="trabajo">Microdermoabrasión con Cristales de Aluminio</td>
+                    <td class="colorcito2">La microdermoabrasión con cristales es el método de exfoliación más preciso,
+                        efectivo e indoloro que existe actualmente. Es un sistema de alta tecnología y precisión en
+                        exfoliación profunda en donde se ocupan cristales de óxido de aluminio que son tan finos que
+                        perfectamente quitan una capa de piel llena de células muertas, puntos negros y tóxicos que se
+                        impregnan en tu piel.
+                    </td>
+                    <td><img class="tabla" src="{% static 'cuerpo/img/h4.jpg' %}"></td>
+                </tr>
+                </body>
+            </table>
+        </div>
+        <br>
+        <br>
+        <center><a class="waves-effect #e91e63 pink btn" href="{% url 'servicios' %}">Volver</a></center>
+        <br>
+        <br>
+        <br>
+    </main>
+
+{% endblock %}

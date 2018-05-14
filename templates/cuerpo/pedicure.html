@@ -1,0 +1,74 @@
+{% extends 'cuerpo/base.html' %}
+
+{% block content %}
+
+    {% load staticfiles %}
+
+    <main>
+        <div class="container">
+            <center><h2 class="tipro">Pedicure</h2>
+                <p class="tipro2">Cuida tus pies con productos nuevos de 2018</p>
+            </center>
+            <h5><p>La pedicure está orientada a la belleza pie. Repujamos cutículas, limamos uñas, luego esmaltamos tus
+                uñas dejando tu pie prolijo y bello para lucirlo con sandalias. A esto le puedes agregar servicios
+                adicionales como exfoliación, fangoterapia,parafinoterapia y algunos diseños para dejar tus uñas
+                diferentes y decoradas.</p><br>
+            </h5>
+            <table>
+                <thead>
+                <tr>
+                    <th class="trabajo">Servicio</th>
+                    <th class="trabajo">Descripción</th>
+                    <th class="trabajo">Imagen</th>
+                </tr>
+                </thead>
+
+                <body>
+                <tr>
+                    <td class="trabajo">Pedicura Aroma (90min)</td>
+                    <td class="colorcito2">Sabemos que para ti es esencial lucir unos pies perfectos, pero a la vez
+                        sentir una verdadera relajación, es por esto que Artepil Spa crea para ti Pedicure Aroma,
+                        abundante en masaje, aromaterapia, bienestar y belleza. Elige una de nuestras tres combinaciones
+                        de Aromaterapia y disfruta de al máximo de nuestro ritual de relajación: Sinergia de Menta –
+                        Yerbabuena – Eucalipto.
+                    </td>
+                    <td><img class="tabla" src="{% static 'cuerpo/img/p1.jpg' %}"></td>
+                </tr>
+                <tr>
+                    <td class="trabajo">Pedicura Artepil</td>
+                    <td class="colorcito2">Una experiencia que realmente consiente tus pies, por algo un predilecto.
+                        Inicia tu relajación eligiendo un té terapeutico. Para este servicio te recomendamos el té
+                        relajante o de albahacar. Tus pies reposarán en una tina con infusión de lavanda buscando su
+                        total relajación.
+                    </td>
+                    <td><img class="tabla" src="{% static 'cuerpo/img/p2.jpg' %}"></td>
+                </tr>
+                <tr>
+                    <td class="trabajo">Pedicura Clásico</td>
+                    <td class="colorcito2">Un servicio simplemente necesario para mantener unos pies divinos cuando el
+                        tiempo apremia. Los pies reposan en agua calientita con infusión de Romero para despertar los
+                        sentidos. Se limpia la uña retirando residuos de esmalte, se liman y se les da forma. Se retiran
+                        callosidades del pie, las cutículas se tratan y si se desea se retiran.
+                    </td>
+                    <td><img class="tabla" src="{% static 'cuerpo/img/p3.jpg' %}"></td>
+                </tr>
+                <tr>
+                    <td class="trabajo">Pedicura Parafina</td>
+                    <td class="colorcito2">Cuando tus pies demandan suavidad e hidratación, lo que necesitan es nuestro
+                        Pedicure Parafina, el cual además de ser necesario, es relajante y terapéutico. El tratamiento
+                        inicia cuando tú eliges un té herbal de nuestra selección. Te encantará el de eucalipto o de
+                        anís. Elige cada vez uno diferente.
+                    </td>
+                    <td><img class="tabla" src="{% static 'cuerpo/img/p4.jpg' %}"></td>
+                </tr>
+                </body>
+            </table>
+        </div>
+        <br>
+        <br>
+        <center><a class="waves-effect #e91e63 pink btn" href="{% url 'servicios' %}">Volver</a></center>
+        <br>
+        <br>
+    </main>
+
+{% endblock %}

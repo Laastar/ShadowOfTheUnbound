@@ -1,0 +1,31 @@
+{% extends 'cuerpo/base.html' %}
+
+{% block content %}
+
+    {% load staticfiles %}
+
+    <main>
+        <br><br>
+        <div class="row">
+            <div class="col s4 offset-s4 white">
+                <form class="post-form" method="POST">
+                    <h2 class="tipro">Haz una cita!</h2>
+                    <div class="input-field col s12 m12">
+                    </div>
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <button class="btn-large waves-effect purple accent-3" type="submit" name="action">Finalizar</button>
+                </form>
+            </div>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="col s4 offset-s4">
+                <a class="btn waves-effect #d500f9 purple accent-3" type="button" name="action"
+                   href={% url 'vercitas' %}>Ver tus citas !
+                </a>
+            </div>
+        </div>
+    </main>
+
+{% endblock %}

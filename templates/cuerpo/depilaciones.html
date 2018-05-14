@@ -1,0 +1,111 @@
+{% extends 'cuerpo/base.html' %}
+
+{% block content %}
+
+    {% load staticfiles %}
+
+    <main>
+
+        <div class="container">
+            <div class="row">
+                <div class="col m12">
+                    <center><h2 class="tipro">Depilación</h2>
+                        <p class="tipro2">Todos los servicios de depilación van acompañados de 5 minutos de masaja de
+                            relajación.</p>
+                    </center>
+                </div>
+            </div>
+            <h5>
+                <p>Nuestro servicio de Depilación es único en el mercado en el sentido que está totalmente diferenciado
+                    por tener una componente de SPA. Nosotros hacemos de la depilación un momento agradable para la
+                    mujer. Todas las mujeres necesitamos depilarnos y no es un momento grato en general. En Eva Spa
+                    Urbano, ofrecemos un servicio en el cual no sólo cumplimos con una obligación estética femenina sino
+                    también es un momento de placer.Utilizamos el método roll on el cual deja la piel sumamente suave y
+                    agradable al tacto. Los productos utilizados son importados de alta calidad y muy higiénicos, ya que
+                    son desechables. Se utilizan ceras en cartuchos y bandas desechables con las cuales se retira la
+                    cera de la piel.</p><br>
+            </h5>
+            <div class="row">
+                <div class="col m6">
+                    <br>
+                    <p class="tipro2">Para ella</p>
+                    <center><h1 class="colorcito">Depilación Láser para Mujer</h1>
+                        <p class="colorcito2">¡No dejes de hacer las cosas que disfrutas por falta de tiempo para
+                            depilarte! Con sólo 9 sesiones, deshazte del vello corporal disfrutando los beneficios desde
+                            tu primera visita. Contamos con la tecnología para depilación láser Candela YAG y LASE® ,
+                            que nos permite garantizar los mejores resultados al debilitar el folículo para conseguir
+                            una depilación efectiva, indolora , definitiva y sobre todo segura para lograr resultados
+                            permanentes.</p></center>
+                </div>
+                <div class="col m6">
+                    <div class="row">
+                        <div class="col m12">
+                                <img class='imgRedonda' src="{% static 'cuerpo/img/depi2.jpg' %}">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col m6">
+                    <br>
+                    <center><h1 class="colorcito">Depilación de Ceja</h1>
+                        <p class="colorcito2">Siendo parte principal de la expresión de nuestro rostro el mantenimiento
+                            de la estética de nuestras cejas es primordial para marcar la diferencia. Un diseño adecuado
+                            de cejas proporciona frescura y juventud a nuestro rostro. </p></center>
+                </div>
+                <div class="col m6">
+                    <div class="row">
+                        <div class="col m12">
+                                <img class='imgRedonda' src="{% static 'cuerpo/img/depi3.jpg' %}">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col m6">
+                    <br>
+                    <p class="tipro2"></p>
+                    <center><h1 class="colorcito">Depilación de Bigote</h1>
+                        <p class="colorcito2">Este tratamiento es por medio del método de la cera, método beneficioso ya
+                            que el vello tarda más en crecer, el vello se vuelve más delgado al igual que causa una
+                            menor irritación.</p></center>
+                </div>
+                <div class="col m6">
+                    <div class="row">
+                        <div class="col m12">
+                                <img class='imgRedonda' src="{% static 'cuerpo/img/depi4.jpg' %}">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="tipro3">Para él...</p>
+            <div class="row">
+                <div class="col m6">
+                    <div class="row">
+                        <div class="col m12">
+                                <img class='imgRedonda' src="{% static 'cuerpo/img/depi.jpg' %}">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col m6">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col m6">
+                    <br>
+                    <center><h1 class="colorcitoh">Depilación para Hombres</h1>
+                        <p class="colorcito2">Novalaser te ayuda a liberarte de las molestias ocasionadas por el vello
+                            como irritación de la piel por vellos encarnados, sudoración excesiva, vello en orejas y
+                            áreas no deseables usando la mejor tecnología avalada por certificaciones internacionales y
+                            completamente respaldados por nuestra experiencia.</p></center>
+                </div>
+            </div>
+            <br>
+            <center><a class="waves-effect #e91e63 pink btn" href="{% url 'servicios' %}">Volver</a></center>
+            <br>
+            <br>
+            <br>
+    </main>
+
+{% endblock %}

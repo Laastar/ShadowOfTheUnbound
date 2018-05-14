@@ -1,0 +1,51 @@
+{% extends 'cuerpo/base.html' %}
+
+{% block content %}
+
+    {% load staticfiles %}
+
+    <main>
+        <div class="container">
+        <ul class="collection with-header">
+            <li class="collection-header #f48fb1 pink lighten-3"><h4>Servicios</h4></li>
+            <li class="collection-item #ffcdd2 red lighten-4">
+                <div>Manicura<a href="{% url 'manicura' %}" class="secondary-content"><i class="material-icons">send</i></a>
+                </div>
+            </li>
+            <li class="collection-item #ffcdd2 red lighten-4">
+                <div>Tratamiento Facial<a href="{% url 'tratamiento' %}" class="secondary-content"><i class="material-icons">send</i></a>
+                </div>
+            </li>
+            <li class="collection-item #ffcdd2 red lighten-4">
+                <div>Depilaciones<a href="{% url 'depilaciones' %}" class="secondary-content"><i
+                        class="material-icons">send</i></a></div>
+            </li>
+            <li class="collection-item #ffcdd2 red lighten-4">
+                <div>Manicura convencional<a href="{% url 'manicura_conv' %}" class="secondary-content"><i
+                        class="material-icons">send</i></a></div>
+            </li>
+            <li class="collection-item #ffcdd2 red lighten-4">
+                <div>Extensiones<a href="{% url 'extensiones' %}" class="secondary-content"><i class="material-icons">send</i></a>
+                </div>
+            </li>
+            <li class="collection-item #ffcdd2 red lighten-4">
+                <div>Cortes de cabello
+                    <a href="{% url 'cortes' %}" class="secondary-content"><i class="material-icons">send</i></a></div>
+            </li>
+            <li class="collection-item #ffcdd2 red lighten-4">
+                <div>Tintes<a href="{% url 'tintes' %}" class="secondary-content"><i class="material-icons">send</i></a></div>
+            </li>
+            <li class="collection-item #ffcdd2 red lighten-4">
+                <div>Pedicure<a href="{% url 'pedicure' %}" class="secondary-content"><i class="material-icons">send</i></a>
+                </div>
+            </li>
+        </ul>
+            </div>
+        <p class = "tipro2">Siempre hermosas ♥...</p>
+        <div class="carousel carousel-slider">
+            <a class="carousel-item" ><img src="{% static 'cuerpo/img/es.jpg' %}"></a>
+            <a class="carousel-item" ><img src="{% static 'cuerpo/img/es2.jpg' %}"></a>
+        </div>
+    </main>
+
+{% endblock %}

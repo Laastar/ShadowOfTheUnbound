@@ -1,0 +1,137 @@
+{% extends 'cuerpo/base.html' %}
+
+{% block content %}
+
+    {% load staticfiles %}
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col m12">
+                    <center><h2 class="tipro">Manicura Convencional</h2>
+                        <p class="tipro2">Estilo innovador 2018</p>
+                    </center>
+
+                </div>
+            </div>
+            <h5>
+                <p>Nuestros servicios de Manicura y Pedicura han sido reconocidos porque transportan a un nivel de total
+                    relajación. Una mezcla perfecta de luz suave, aromaterapia y el toque mágico de las manos de las
+                    terapeutas son parte de los ingredientes mágicos.
+                    En Artepil Spa encontrará cuatro diferentes tipos de Manicura y Pedicura, cada uno con un sello
+                    característico y digno de disfrutar.
+                    Se recomienda recibir uno cada dos semanas.</p><br>
+            </h5>
+            <p class="tipro2">Luce unas manos hermosas con...</p>
+            <div class="row">
+                <div class="col m6">
+                    <br>
+                    <center><h1 class="colorcito">Esmalte en Gel</h1>
+                        <p class="colorcito2">Para ti que te gusta tener las uñas perfectamente cuidadas en todo momento
+                            y con un look natural.
+                        </p></center>
+                </div>
+                <div class="col m6">
+                    <div class="row">
+                        <div class="col m12">
+                                <img class='imgRedonda' src="{% static 'cuerpo/img/esm.jpg' %}">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col m6">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col m6">
+                    <div class="row">
+                        <div class="col m12">
+                            <br>
+                            <br>
+                            <br>
+                                <img class='imgRedonda' src="{% static 'cuerpo/img/esm1.jpg' %}">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col m6">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col m6">
+                    <br>
+                    <center><h1 class="colorcito">Manicura Clásico</h1>
+                        <p class="colorcito2">Cuando el tiempo es importante, el manicure clásico también lo es. Tú y
+                            tus manos lo agradecerán. Tus manos disfrutarán reposar en agua calientita con infusión de
+                            romero que despertará tus sentidos, mientras tú disfrutas de un delicioso té
+                            terapéutico…recomendación, té de Romero para ti también. Las uñas se limpian y dan forma, se
+                            le da tratamiento a la cutícula o se retira. Para sellar el manicure, elige uno de nuestra
+                            gran variedad de colores de esmalte. Especialmente recomendamos nuestra línea de secado
+                            rápido y larga durabilidad.
+                        </p></center>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col m6">
+                    <br>
+                    <center><h1 class="colorcito">Manicura Artepil</h1>
+                        <p class="colorcito2">Una manicura con una relajante experiencia. El ritual de relajación inicia
+                            al elegir el té terapéutico de tu elección. Tus manos recibirán un tratamiento especial al
+                            reposar en una infusión de lavanda para una máxima relajación. Las uñas se verán divinas con
+                            el esmalte de su elección. Pide tu esmalte de secado rápido y larga duración, o completa tu
+                            servicio con Esmaltado en Gel como servicio adicional.</p></center>
+                </div>
+                <div class="col m6">
+                    <div class="row">
+                        <div class="col m12">
+                            <br>
+                            <br>
+                            <br>
+                                <img class='imgRedonda' src="{% static 'cuerpo/img/unas.jpg' %}">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col m6">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col m6">
+                    <div class="row">
+                        <div class="col m12">
+                            <br>
+                            <br>
+                            <br>
+                            <img class='imgRedonda' src="{% static 'cuerpo/img/parafina.jpg' %}">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col m6">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col m6">
+                    <br>
+                    <center><h1 class="colorcito">Manicura Parafina</h1>
+                        <p class="colorcito2">Cuando tus manos piden hidratación, lo que realmente están pidiendo es un
+                            Manicure Parafina, y el resultado será una sedosa suavidad. El tratamiento inicia cuando tus
+                            manos reposan en una infusión de árnica que ayudará a desinflamar. Tus uñas se limpian, se
+                            dan forma, la cutícula se trata y tus manos se dejan viendo hermosas. El ritual de suavidad
+                            inicia dando un masaje con exfoliante natural e hidratante de karité. Tus manos se cubren
+                            con el arte de la parafina para lograr unas manos suaves como la seda. Para finalizar elige
+                            el esmalte de temporada o aquel que te hará lucir divina toda la semana.
+                        </p></center>
+                </div>
+            </div>
+            <center><a class="waves-effect #e91e63 pink btn" href="{% url 'servicios' %}">Volver</a></center>
+            <br>
+            <br>
+            <br>
+        </div>
+    </main>
+
+{% endblock %}
